@@ -7,54 +7,30 @@ class MyContainer extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blue,
+      color: Colors.grey,
+      alignment: Alignment.center,
       child: DefaultTextStyle(
         style: TextStyle(),
-        child: Center(
-          child:  Container(
-            width: 250,
-            height: 250,
-            alignment: Alignment.bottomCenter,
-            decoration: BoxDecoration(
-            color: Colors.orange,
-            shape: BoxShape.circle,
-            gradient: RadialGradient(
-              colors:[
-                Colors.yellow,
-                Colors.green.withOpacity(0.2),
-                Colors.white,
-              ],
-              stops: [
-                0.3,
-                0.6,
-                1,
-              ],
-            ),
-            boxShadow: [
-              
-              BoxShadow(
-                color: Colors.red.withOpacity(
-                  0.9,
-                ),
-                blurRadius: 10,
-                offset: Offset(0,-3),
+         child: Container(
+            
+            color: Colors.red,
+            margin: EdgeInsets.symmetric(
+            horizontal: 10, 
+            vertical: 50,            
               ),
-            ],
-            ),
-           
             padding: EdgeInsets.symmetric(
-              horizontal: 20,
-              vertical: 110,
+              horizontal: 30,
+              vertical: 10,
               ),
             child: Text(
               "Brayam",
             style: TextStyle(
-              color: Colors.cyan,
+              color: Colors.black,
             )
             ),
-          ) ,
+          ),
         ),
-      ),
+      
     );
   }
 
