@@ -18,6 +18,18 @@ class MyContainer extends StatelessWidget{
             decoration: BoxDecoration(
             color: Colors.orange,
             shape: BoxShape.circle,
+            gradient: RadialGradient(
+              colors:[
+                Colors.yellow,
+                Colors.green.withOpacity(0.2),
+                Colors.white,
+              ],
+              stops: [
+                0.3,
+                0.6,
+                1,
+              ],
+            ),
             boxShadow: [
               
               BoxShadow(
@@ -32,7 +44,7 @@ class MyContainer extends StatelessWidget{
            
             padding: EdgeInsets.symmetric(
               horizontal: 20,
-              vertical: 20,
+              vertical: 110,
               ),
             child: Text(
               "Brayam",
