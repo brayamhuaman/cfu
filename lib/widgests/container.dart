@@ -9,8 +9,8 @@ class MyContainer extends StatelessWidget{
       style: TextStyle(),
       child: Center(
         child:  Container(
-          width: 200,
-          height: 200,
+          width: 250,
+          height: 250,
           color: Colors.yellow,
           alignment: Alignment.center,
           child: Text(
