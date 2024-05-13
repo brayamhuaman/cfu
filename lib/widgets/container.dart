@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class MyContainer extends StatelessWidget{
   @override
@@ -11,8 +12,13 @@ class MyContainer extends StatelessWidget{
         child:  Container(
           width: 250,
           height: 250,
-          color: Colors.yellow,
+         
           alignment: Alignment.bottomCenter,
+          decoration: BoxDecoration(
+          color: Colors.orange,
+          shape: BoxShape.circle,
+          ),
+         
           padding: EdgeInsets.symmetric(
             horizontal: 20,
             vertical: 20,
