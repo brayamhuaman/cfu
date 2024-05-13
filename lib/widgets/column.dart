@@ -16,22 +16,26 @@ class MyColumn extends StatelessWidget {
         child: Container(
           color: Colors.grey,
           child: Column(
-            mainAxisSize: MainAxisSize.min,
+          
+        
             children:  [
-              const Text("Hola Mundo"),
-              const Text(
-                "Hello World",
+              const Text("HELLO"),
+              
+              const Text (
+                "WORLD",
                 style: TextStyle(
                   color: Colors.red,
-                  fontSize: 20,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
-                  
-                )
+                ),
               ),
+              const Spacer(),
               Container(
                 height: 100,
                 color: Colors.blue,
               ),
+              
+              // const SizedBox(height: 100),
               Container(
                 height: 100,
                 color: Colors.green,
