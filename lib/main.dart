@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'widgests/text.dart';
+import 'widgests/container.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,26 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
    
    return MaterialApp(
-    home: Center(
-      child: DefaultTextStyle(
-        style: TextStyle(), 
-        child: Text(
-       """
-        Hello World no
-        Como estan pruenas
-        cunemtendfssdf
-        """
-       ,
-       maxLines: 2,
-       overflow: TextOverflow.ellipsis,
-        style: TextStyle(
-          fontSize: 20,
-          color: Colors.red,
-        ),
-        textAlign: TextAlign.end, 
-              ),
-      ),
-    ),
+    home: MyContainer(),
     );
     
   }
