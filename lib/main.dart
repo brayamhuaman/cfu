@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'widgests/text.dart';
-import 'widgests/container.dart';
+import 'widgets/text.dart';
+import 'widgets/container.dart';
 
 void main() {
   runApp(const MyApp());
