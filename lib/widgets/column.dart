@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class MyColumn extends StatelessWidget {
   const MyColumn({Key? key}) : super(key: key);
@@ -16,36 +17,45 @@ class MyColumn extends StatelessWidget {
         child: Container(
           color: Colors.grey,
           child: Column(
-          
         
             children:  [
-              const Text("HELLO"),
-              
-              const Text (
-                "WORLD",
-                style: TextStyle(
-                  color: Colors.red,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const Spacer(),
               Container(
-                height: 100,
-                color: Colors.blue,
+                                height: 50,
+                color: Colors.blueGrey,
               ),
-              
+             
+             Expanded(
+              flex: 2,
+               child: Container(
+                 height: 100,
+                 color: Colors.blue,
+               ),
+             ),
+           
+              Expanded(
+                flex: 4,
+               child: Container(
+                 height: 100,
+                 color: Colors.orange,
+               ),
+             ),
+           
+
+               Container(
+                height: 50,
+                color: Colors.brown,
+              ),
               // const SizedBox(height: 100),
               Container(
-                height: 100,
+                height: 50,
                 color: Colors.green,
               ),
             ],
           ),
         ),
       ),
-    
-    ),
+          
+          ),
     );
     }
 }
